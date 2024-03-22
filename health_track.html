@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthTrack</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HealthTrack</h1>
+        <nav>
+            <ul>
+                <li><a href="#profile">Profile</a></li>
+                <li><a href="#fitness">Fitness</a></li>
+                <li><a href="#nutrition">Nutrition</a></li>
+                <li><a href="#sleep">Sleep</a></li>
+                <!-- Add more navigation links for other sections -->
+            </ul>
+        </nav>
+    </header>
+
+    
+    
+
+    <section id="fitness">
+        <h2>Fitness Tracking</h2>
+        <div id="fitnessForm">
+            <label for="activityType">Activity Type:</label>
+            <select id="activityType" name="activityType">
+                <option value="running">Running</option>
+                <option value="cycling">Cycling</option>
+                <option value="swimming">Swimming</option>
+                <!-- Add more activity types as needed -->
+            </select>
+    
+            <label for="duration">Duration (minutes):</label>
+            <input type="number" id="duration" name="duration" required>
+    
+            <label for="intensity">Intensity:</label>
+            <select id="intensity" name="intensity">
+                <option value="low">Low</option>
+                <option value="moderate">Moderate</option>
+                <option value="high">High</option>
+                <!-- Add more intensity levels as needed -->
+            </select>
+    
+            <button type="button" onclick="trackFitness()">Track Activity</button>
+        </div>
+    
+        <div id="fitnessHistory">
+            <h3>Recent Activities</h3>
+            <ul id="activityList">
+                <!-- Activity items will be dynamically added here -->
+            </ul>
+        </div>
+    </section>
+    
+
+    
+    
+
+    
+    
+
+    <!-- Add more sections for other features -->
+
+    <footer>
+        <p>&copy; 2024 HealthTrack. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

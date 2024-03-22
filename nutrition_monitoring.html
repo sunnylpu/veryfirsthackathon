@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section id="nutrition">
+        <h2>Nutrition Monitoring</h2>
+        <div id="nutritionForm">
+            <label for="foodItem">Food Item:</label>
+            <input type="text" id="foodItem" name="foodItem" required>
+    
+            <label for="portionSize">Portion Size:</label>
+            <input type="text" id="portionSize" name="portionSize" required>
+    
+            <label for="calories">Calories:</label>
+            <input type="number" id="calories" name="calories" required>
+    
+            <label for="carbs">Carbohydrates (g):</label>
+            <input type="number" id="carbs" name="carbs" required>
+    
+            <label for="proteins">Proteins (g):</label>
+            <input type="number" id="proteins" name="proteins" required>
+    
+            <label for="fats">Fats (g):</label>
+            <input type="number" id="fats" name="fats" required>
+    
+            <button type="button" onclick="trackNutrition()">Log Food</button>
+        </div>
+    
+        <div id="nutritionHistory">
+            <h3>Recent Food Logs</h3>
+            <ul id="foodLogList">
+                <!-- Food log items will be dynamically added here -->
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
